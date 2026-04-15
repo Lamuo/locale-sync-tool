@@ -1,0 +1,17 @@
+{
+  "name": "locale-sync-tool",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sync locale JSON files from reference locales and sort keys alphabetically.",
+  "type": "commonjs",
+  "bin": {
+    "sync-locales": "./sync-locales.cjs"
+  },
+  "scripts": {
+    "sync": "node sync-locales.cjs",
+    "sync:dry": "node sync-locales.cjs --dry-run --no-pause",
+    "build:exe": "pnpm dlx pkg@5.8.1 sync-locales.cjs --targets node18-win-x64 --output tools/SyncLocales.exe",
+    "exe:sync": "tools\\SyncLocales.exe",
+    "exe:sync:dry": "tools\\SyncLocales.exe --dry-run --no-pause"
+  }
+}
