@@ -1,0 +1,8 @@
+{
+  "ui": {
+    "colors": {
+      "theme": "orange",
+      "deleteModeTheme": "red"
+    }
+  }
+}
